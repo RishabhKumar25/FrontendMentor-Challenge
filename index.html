@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title> 3-column card </title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    
+    }
+    body{
+      overflow-x: hidden;
+
+    }
+    .attribution {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .container{
+      height: 100vh;
+      width: 100vw;
+      background-color: white;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+
+    .main-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: hsl(0, 0%, 95%);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 80vh;
+      width: 80vw;
+      box-shadow: 5px 2px 8px 2px gray;
+      
+    }
+
+    .box {
+      width: 22vw;
+      height: 70vh ;
+      display: grid;
+      justify-content: center;
+     
+      
+    }
+
+    .box-1{
+
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+
+      
+
+    }
+
+    .box-3{
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+
+    }
+
+    
+
+    .box-1{
+      background-color: hsl(31, 77%, 52%);
+    }
+    .box-2{
+      background-color: hsl(184, 100%, 22%);
+    }
+    .box-3{
+      background-color:hsl(179, 100%, 13%) ;
+    }
+
+    .box img{
+      padding-top: 30px;
+      padding-left: 30px;
+      float: left;
+    }
+
+    
+
+    .title h1{
+
+      color: white;
+      margin-top: 120px;
+      text-align: left;
+      padding: 10px 40px 0 30px;
+      margin-bottom: 50px;
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: 700;
+      font-size: 3rem;
+      text-transform: uppercase;
+
+    }
+
+    .box p{
+      font-size: 1rem;
+      text-align: center;
+      color: white;
+      font-family:  'Lexend Deca', sans-serif;
+      font-weight: 400;
+      padding-left: 30px;
+      padding-right: 30px;
+    text-align: left;
+    
+    }
+
+    .button{
+      margin-top: 100px;
+    }
+    .box .button a{
+      background-color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+      font-family: 'Lexend Deca', sans-serif;
+      
+    }
+    .box .button a:hover{
+      background-color: transparent;
+      border:1px solid white;
+      
+      color: black;
+    }
+
+    .box-1 .button a{
+      color: hsl(31, 77%, 52%);
+    } 
+
+    .box-2 .button a{
+      color: hsl(184, 100%, 22%);
+      
+    }
+
+    .box-2 .button a{
+      color: hsl(179, 100%, 13%) ;
+    }
+
+    @media  screen and (max-width:1200px) {
+
+      .main-container{
+       
+      grid-template-columns: auto;
+      
+      box-shadow: none;
+     
+     
+      }
+
+      .box{
+        width: 100%;
+      }
+
+      
+    .box-1{
+
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+
+
+
+}
+
+.box-3{
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+
+}
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  
+
+    <div class="container">
+      <div class="main-container">
+      <div class="box-1 box">
+        <div class="card">
+
+       
+        <div class="img">
+
+          <img src="./images/icon-sedans.svg" alt="">
+
+        </div>
+        <div class="title">
+          <h1>Sedans</h1>
+
+
+        </div>
+        <div class="content">
+          <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+            or on your next road trip.</p>
+
+        </div>
+        <div class="button">
+
+          <a href="">Learn More</a>
+
+        </div>
+
+      </div>
+
+
+        
+
+      </div>
+
+
+
+      <div class="box-2 box">
+        <div class="card">
+
+        <div class="img">
+          <img src="./images/icon-suvs.svg" alt="">
+
+        </div>
+        <div class="title">
+          <h1> SUVs</h1>
+
+        </div>
+        <div class="content">
+          <p>
+            Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+            and off-road adventures.</p>
+
+        </div>
+        <div class="button">
+          <a href="">Learn More</a>
+
+
+        </div>
+
+
+      </div>
+
+      </div>
+
+
+
+      <div class="box-3 box">
+        <div class="card">
+
+        <div class="img">
+          <img src="./images/icon-luxury.svg" alt="">
+
+        </div>
+        <div class="title">
+          <h1> Luxury</h1>
+
+        </div>
+        <div class="content">
+          <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+            rental and arrive in style.</p>
+
+        </div>
+        <div class="button">
+
+          <a href="">Learn More</a>
+
+        </div>
+
+
+      </div>
+
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+  </header>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rishabh Karn</a>.
+  </div>
+</body>
+
+</html>
